@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+
+/* ===== COLORS & DEFAULTS ===== */
+body{
+    background-color: #f7efe5;
+    color: #333;
+}
+
+header{
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+* {
+    font-family: "Playwrite NO", cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ===== NAVIGATION ===== */
+.nav-link {
+    color: #3a3a3a !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+.nav-link.active {
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+
+/* ===== TITLES ===== */
+#mp, .ho, .co {
+    text-align: center;
+    line-height: 100px;
+    color: #1a3c6e;
+    font-weight: 700;
+}
+
+/* ===== CONTENT ===== */
+section{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+p{
+    line-height: 40px;
+    font-size: 18px;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary{
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+}
+
+.btn-primary:hover{
+    background-color: #0b5ed7 !important;
+}
+
+/* ===== WHATSAPP BUTTON ===== */
+.wh-btn{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  padding:10px 15px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  background-color: #ffffff;
+  border:1px solid #25D366;
+  color: #1a3c6e;
+  transition: 0.3s;
+}
+
+.wh-btn:hover{
+  background-color:#25D366;
+  color: white;
+}
+
+.wh-btn svg{ 
+  fill: #25D366; 
+}
+
+.wh-btn:hover svg{ 
+  fill: white; 
+}
+
+/* Center items */
+.m{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* خلي الصور responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* تحسين شكل الهيدر على الموبايل */
+header .nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* المسافات في العناوين على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    #mp {
+        font-size: 28px;
+        line-height: 60px;
+    }
+
+    h1, .display-4 {
+        font-size: 26px !important;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .container .row {
+        text-align: center;
+    }
+
+    .col-lg-7, 
+    .col-lg-4 {
+        width: 100%;
+    }
+
+    .col-lg-4 img {
+        margin-top: 20px;
+    }
+}
+
+/* للشاشات الصغيرة جدًا */
+@media (max-width: 480px) {
+    #mp {
+        font-size: 22px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+.k{
+    margin-bottom: 20px;
+}
